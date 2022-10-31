@@ -1,0 +1,32 @@
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-6 bg-dark">
+
+          <img src="assets/img/APLogo-20-20.png" alt="#YoProgramo" class="logo-AP">
+          <span class="nombre-programa">#YoProgramo</span>
+
+      </div>
+
+      <div class="col-6 bg-dark text-end p-3">
+
+        <span  class="social-icons">
+
+          -<li><a href="https://www.facebook.com/leonardo.venezia.92" target="_blank" rel="noopener noreferrer" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+          <!--<li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>-->
+          <!--<li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>-->
+          <!--<li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>-->
+          <!--<li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>-->
+          <li><a href="https://github.com/LeonardoVGH" target="_blank" rel="noopener noreferrer" class="social-icon"> <i class="fa fa-github" style="margin-left: 5px;"></i></a></li>
+        </span>
+
+          <button type="button" class="btn btn-primary" style="margin-left: 10px;" (click)="loguear()" *ngIf="!estaLogueado">Ingresar</button>
+          <button type="button" class="btn btn-primary" style="margin-left: 10px;" (click)="onLogOut()" *ngIf="estaLogueado">Cerrar sesión</button>
+
+           <!--<a href="#" class="btn btn-primary" style="margin-left: 10px;">Log out</a>-->
+
+
+      </div>
+
+  </div>
+</div>

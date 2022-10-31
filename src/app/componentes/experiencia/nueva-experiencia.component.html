@@ -1,0 +1,139 @@
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <title>Nueva experiencia</title>
+</head>
+
+<body>
+
+
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          src="assets/img/undraw_remotely_2j6y.svg"
+          alt="Image"
+          class="img-fluid"
+        />
+      </div>
+      <div class="col-md-6 contents">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="mb-4">
+              <h3>Nueva experiencia</h3>
+              <p class="mb-4">
+                Desde aquí podrás agregar una nueva experiencia al portfolio.
+              </p>
+            </div>
+
+            <!-- FORM -->
+
+            <form #f="ngForm" (ngSubmit)="onCreate()">
+              <span class="mb-4"><label for="nombreE">Título:</label></span>
+
+              <div class="form-group first">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="nombreE"
+                  id="nombreE"
+                  [(ngModel)]="exptitulo"
+                  required
+                />
+              </div>
+
+              <div><p></p></div>
+              <span class="mb-4"><label for="descripcionE">Empresa:</label></span>
+
+              <div class="form-group last mb-4">
+                <input
+                type="text"
+                  class="form-control"
+                  name="descripcionE"
+                  id="descripcionE"
+                  [(ngModel)]="exp_empresa"
+                  required
+                />
+              </div>
+
+              <div><p></p></div>
+              <span class="mb-4"><label for="descripcionE">Desde:</label></span>
+
+              <div class="form-group last mb-4">
+                <input
+                type="text"
+                  class="form-control"
+                  name="exp_desde"
+                  id="exp_desde"
+                  [(ngModel)]="exp_desde"
+                  required
+                />
+              </div>
+
+              <div><p></p></div>
+              <span class="mb-4"><label for="descripcionE">Hasta:</label></span>
+
+              <div class="form-group last mb-4">
+                <input
+                type="text"
+                  class="form-control"
+                  name="exp_hasta"
+                  id="exp_hasta"
+                  [(ngModel)]="exp_hasta"
+                  required
+                />
+              </div>
+
+              <div><p></p></div>
+              <span class="mb-4"><label for="descripcionE">Breve descripción:</label></span>
+
+              <div class="form-group last mb-4">
+                <input
+                type="text"
+                  class="form-control"
+                  name="exp_descripcion"
+                  id="exp_descripcion"
+                  [(ngModel)]="exp_descripcion"
+                  required
+                />
+              </div>
+
+              <div><p></p></div>
+              <span class="mb-4"><label for="descripcionE">Logo o imagen (URL):</label></span>
+              <div class="form-group last mb-4">
+                <input
+                type="text"
+                  class="form-control"
+                  name="logo"
+                  id="logo"
+                  [(ngModel)]="logo"
+                  required
+                />
+              </div>
+
+              <input
+                type="submit"
+                value="Agregar"
+                class="btn btn-block btn-primary"
+              />
+            </form>
+
+            <!-- termina el FORM -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>

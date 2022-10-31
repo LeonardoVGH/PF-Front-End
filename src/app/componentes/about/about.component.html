@@ -1,0 +1,17 @@
+<div class="b-example-divider"></div>
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="{{about.url_img}}" class="d-block mx-lg-auto img-fluid" width="300" height="300" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h2 class="display-5 fw-bold lh-1 mb-3">{{about.nombre}}</h2>
+      <h3>{{about.titulo}}</h3>
+
+      <p class="lead" style="margin-top: 20px;">{{about.descripcion}} </p>
+      <a href="#" title="Editar" routerLink="/editarabout"><i class="fa fa-edit text-primary" style="margin-right: 10px;" *ngIf="estaLogueado"></i></a>
+
+    </div>
+  </div>
+</div>
